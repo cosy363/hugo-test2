@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OPMATE V1.1 on OPMATE</title>
+    <link>http://localhost:1313/docs/v1.1/</link>
+    <description>Recent content in OPMATE V1.1 on OPMATE</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <atom:link href="http://localhost:1313/docs/v1.1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/docs/v1.1/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/tutorial/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;제1강 &lt;a href=&#34;QuickTutorial1.md&#34;&gt;CLI 사용법&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;제2강 &lt;a href=&#34;QuickTutorial2.md&#34;&gt;사용자 계정 생성 및 로그인&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;제3강 &lt;a href=&#34;QuickTutorial3.md&#34;&gt;노드 활성화&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;제4강 &lt;a href=&#34;QuickTutorial4.md&#34;&gt;태스크 정의&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;제5강 &lt;a href=&#34;QuickTutorial5.md&#34;&gt;태스크 승인&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;제6강 &lt;a href=&#34;QuickTutorial6.md&#34;&gt;태스크 실행&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/docs/v1.1/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/tutorial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;목차&lt;/a&gt; / &lt;a href=&#34;QuickTutorial2.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;OPMATE CLI 명령어는 &lt;code&gt;opmate &amp;lt;object&amp;gt; &amp;lt;action&amp;gt; &amp;lt;arguments&amp;gt;&lt;/code&gt;의 형식으로 이루어져 있습니다. 가능한 파라미터와 설명을 보고 싶다면, 다음의 형식으로 마지막에 &lt;code&gt;help&lt;/code&gt;를 붙여주면 됩니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/docs/v1.1/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/tutorial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;목차&lt;/a&gt; / &lt;a href=&#34;QuickTutorial1.md&#34;&gt;이전페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial3.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다음과 같이 나의 사용자 계정을 만듭니다. 사용자ID는 bumbee이고, 이름, 전화번호, 이메일 등을 입력합니다.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ opmate user create -id bumbee -nm &amp;#39;cutefly&amp;#39; -pn &amp;#39;010-2222-2222&amp;#39; -ea &amp;#39;bumbee@email.com&amp;#39;&#xA;Requesting https://127.0.0.1:8443/opmate&#xA;Enter password: &#xA;Confirm password: &#xA;bumbee has been created successfully.&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;정상적으로 생성이 되었지만, 아직은 사용이 불가능합니다.&#xA;시스템관리자 권한을 가지고 있는 사용자에게 활성화를 요청합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/docs/v1.1/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/tutorial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;목차&lt;/a&gt; / &lt;a href=&#34;QuickTutorial2.md&#34;&gt;이전페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial4.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;노드(Node)는 관리하고자 하는 호스트(Host)와 대응하는 개념입니다.&#xA;호스트(Host)에 에이전트를 설치 후 구동하면, 자동으로 노드가 마스터로 등록됩니다.&lt;/p&gt;&#xA;&lt;p&gt;우선, 노드의 목록을 조회해 보겠습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/docs/v1.1/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/tutorial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;목차&lt;/a&gt; / &lt;a href=&#34;QuickTutorial3.md&#34;&gt;이전페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial5.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;에이전트가 설치된 노드에 명령을 실행하기 위해서, 태스크(Task)를 정의해야 합니다.&lt;/p&gt;&#xA;&lt;p&gt;먼저, 스크립트 파일을 만듭니다.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ vi diskusage.sh&#xA;#!/bin/sh&#xA;df -h&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;&lt;code&gt;diskusage&lt;/code&gt;라는 ID로 태스크를 생성합니다.&#xA;위에서 만든 쉘스크립트 파일의 경로를 주고, 호스트(Host)에서 실행할 OS 사용자명은 root로 지정합니다.&#xA;또한, 온디맨드 방식으로 실행할 수 있도록, &lt;code&gt;&#39;-eo E&#39;&lt;/code&gt; 옵션도 추가합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/docs/v1.1/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/tutorial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;목차&lt;/a&gt; / &lt;a href=&#34;QuickTutorial4.md&#34;&gt;이전페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial6.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;신규로 생성한 태스크는 실행하기 위해서는 승인을 먼저 받아야 합니다.&#xA;승인은 승인권한을 가지고 있는 사용자만이 할 수 있습니다.&#xA;사용자 목록을 조회해보겠습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/docs/v1.1/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/tutorial/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;목차&lt;/a&gt; / &lt;a href=&#34;QuickTutorial5.md&#34;&gt;이전페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;드디어, 태스크 실행입니다.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ opmate task run -id diskusage&#xA;Requesting https://127.0.0.1:8443/opmate;user=bumbee&#xA;task-instance #234 has been created successfully.&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;태스크를 한번 실행하면 그와 대응하는 태스크 인스턴스(Task Instance)가 만들어집니다.&#xA;위에서는 234으로 인스턴스가 생성되었고, 이 번호는 전체 태스크에서 고유한 번호입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>리눅스/유닉스용 에이전트 삭제</title>
+      <link>http://localhost:1313/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</guid>
+      <description>&lt;p&gt;에이전트가 &lt;strong&gt;/infsw/opma&lt;/strong&gt; 디렉토리에 설치되어 있다고 가정하였습니다. 실제 설치된 경로에 따라 진행하시기 바랍니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;root로-로그인&#34;&gt;root로 로그인&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ su -&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;에이전트-중지&#34;&gt;에이전트 중지&lt;/h2&gt;&#xA;&lt;p&gt;실행중인 에이전트를 중지시킵니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>리눅스/유닉스용 에이전트 설치</title>
+      <link>http://localhost:1313/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/</guid>
+      <description>&lt;h2 id=&#34;파일-준비&#34;&gt;파일 준비&lt;/h2&gt;&#xA;&lt;p&gt;최신 버전의 설치 파일을 준비합니다.(e.g. opma-inst-1.1.005-20230327.tar.gz)&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ls&#xA;opma-inst-1.1.005-20230327.tar.gz&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;root-로-로그인&#34;&gt;root 로 로그인&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ su -&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;압축-해제-및-인스톨러-실행&#34;&gt;압축 해제 및 인스톨러 실행&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ gunzip opma-inst-1.1.005-20230327.tar.gz&#xA;$ tar -xvf opma-inst-1.1.005-20230327.tar&#xA;$ cd opma-inst-1.1.005-20230327&#xA;$ ./install.sh&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;입력&#34;&gt;입력&lt;/h2&gt;&#xA;&lt;p&gt;설치할 경로를 입력하고, 출력되는 내용을 확인 후 설치를 진행합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>사용자 매뉴얼</title>
+      <link>http://localhost:1313/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;UserManual1.md&#34;&gt;1. 개요&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;UserManual2.md&#34;&gt;2. 사용자&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;UserManual3.md&#34;&gt;3. 사용자 그룹&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;UserManual4.md&#34;&gt;4. 노드&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;UserManual5.md&#34;&gt;5. 노드 그룹&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;UserManual6.md&#34;&gt;6. 태스크&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;UserManual7.md&#34;&gt;7. 태스크 인스턴스&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;UserManual8.md&#34;&gt;8. 파일 배포/수집&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

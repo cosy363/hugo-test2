@@ -1,0 +1,1441 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.01b0834d5af51b24812d02878d09c8d7677d6b8af13164fb50215889dc19aaefd0e9366c13b45a9a57ae481dfd1836bce46b5ebfe461d56e3498b9443d8c5e27.css" integrity="sha512-AbCDTVr1GySBLQKHjQnI12d9a4rxMWT7UCFYidwZqu/Q6TZsE7RamleuSB39GDa85Gtev&#43;Rh1W40mLlEPYxeJw==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/v2.0/tutorial/6.-%ED%8C%8C%EC%9D%BC-%EC%A0%84%EC%86%A1/">
+  <link rel="canonical" href="http://localhost:1313/docs/v2.0/tutorial/6.-%ED%8C%8C%EC%9D%BC-%EC%A0%84%EC%86%A1/">
+<title>6. 파일 전송  |  OPMATE</title>
+<meta name="description" content="Tutorial 6 - File Transfer">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:title" content="6. 파일 전송">
+<meta property="og:description" content="Tutorial 6 - File Transfer">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/docs/v2.0/tutorial/6.-%ED%8C%8C%EC%9D%BC-%EC%A0%84%EC%86%A1/"><meta property="og:image" content="http://localhost:1313/cover.png"><meta property="article:section" content="docs">
+
+<meta property="og:site_name" content="My Docs">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/cover.png"><meta name="twitter:title" content="6. 파일 전송">
+<meta name="twitter:description" content="Tutorial 6 - File Transfer">
+<meta name="twitter:site" content="@getdoks">
+
+    
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Opmate",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Opmate V2.0",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/v2.0/",
+       "name": "Opmate V2.0",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/v2.0/tutorial/",
+       "name": "사용자 튜토리얼",
+       "position": 4
+     },
+     {
+       "@type": "ListItem",
+       "name": "6. 파일 전송",
+       "position": 5
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OPMATE</a>
+
+    
+    
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open open>
+      <summary>OPMATE v2.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v2.0/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">시작하기</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%A0%9C%EA%B1%B0/">에이전트 제거</a>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>사용자 튜토리얼</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v2.0/tutorial/1.-cli-%EB%AA%85%EB%A0%B9%EC%96%B4/">1. CLI 명령어</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/2.-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A1%9C%EA%B7%B8%EC%9D%B8/">2. 사용자 로그인</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/3.-%EB%85%B8%EB%93%9C-%EC%A1%B0%ED%9A%8C/">3. 노드 조회</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/4.-%ED%83%9C%EC%8A%A4%ED%81%AC-%EC%83%9D%EC%84%B1/">4. 태스크 생성</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/5.-%ED%83%9C%EC%8A%A4%ED%81%AC-%EC%8B%A4%ED%96%89-%EB%B0%8F-%EA%B6%8C%ED%95%9C-%ED%99%95%EC%9D%B8/">5. 태스크 실행 및 권한 확인</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/v2.0/tutorial/6.-%ED%8C%8C%EC%9D%BC-%EC%A0%84%EC%86%A1/">6. 파일 전송</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>OPMATE v1.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Agent Installation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.0/agent/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/">리눅스/유닉스용 에이전트 삭제</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">리눅스/유닉스용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">윈도우용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/">윈도우즈용 에이전트 삭제</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Tutorial</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>OPMATE V1.1</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/">리눅스/유닉스용 에이전트 삭제</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">리눅스/유닉스용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">윈도우용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/">윈도우즈용 에이전트 삭제</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OPMATE</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link active" href="http://localhost:1313/docs/guides/example-guide/" aria-current="true">Docs</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/blog/">Blog</a>
+              </li>
+            </ul>
+
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link p-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/thuliteio/doks"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        </div>
+    </div>
+
+    
+    </div>
+</header>
+</div>
+
+<div class="modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 visually-hidden" id="searchModalLabel">Search</h1>
+        <button type="button" class="btn-close visually-hidden" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="search-input flex-grow-1 d-none">
+          <form id="search-form" class="search-form" action="#" method="post" accept-charset="UTF-8" role="search">
+            <label for="query" class="visually-hidden">Search</label>
+            <div class="d-flex">
+              <input type="search" id="query" name="query" class="search-text form-control form-control-lg" placeholder="Search" aria-label="Search" maxlength="128" autocomplete="off">
+              <button type="button" class="btn btn-link text-decoration-none px-0 ms-3 d-md-none" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p class="search-loading status message d-none mt-3 text-center">Loading search index…</p>
+        <p class="search-no-recent message d-none mt-3 text-center">No recent searches</p>
+        <p class="search-no-results message d-none mt-3 text-center">No results for "<strong><span class="query-no-results">Query here</span></strong>"</p>
+        <div id="searchResults" class="search-results"></div>
+        <template>
+          <article class="search-result list-view">
+            <div class="card my-3">
+              <div class="card-body">
+                <header>
+                  <h2 class="h5 title title-submitted mb-0"><a class="stretched-link text-decoration-none text-reset" href="#">Title here</a></h2>
+                  <div class="submitted d-none"><time class="created-date">Date here</time></div>
+                </header>
+                <div class="content">Summary here</div>
+              </div>
+            </div>
+          </article>
+        </template>
+      </div>
+      <div class="modal-footer">
+        <ul class="list-inline me-auto d-none d-md-block">
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd><span class="DocSearch-Label">to select</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd><span class="DocSearch-Label">to navigate</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd><span class="DocSearch-Label">to close</span></li>
+        </ul>
+        <p class="d-md-none">Search by <a class="text-decoration-none" href="https://github.com/nextapps-de/flexsearch">FlexSearch</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open open>
+      <summary>OPMATE v2.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v2.0/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">시작하기</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%A0%9C%EA%B1%B0/">에이전트 제거</a>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>사용자 튜토리얼</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v2.0/tutorial/1.-cli-%EB%AA%85%EB%A0%B9%EC%96%B4/">1. CLI 명령어</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/2.-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A1%9C%EA%B7%B8%EC%9D%B8/">2. 사용자 로그인</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/3.-%EB%85%B8%EB%93%9C-%EC%A1%B0%ED%9A%8C/">3. 노드 조회</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/4.-%ED%83%9C%EC%8A%A4%ED%81%AC-%EC%83%9D%EC%84%B1/">4. 태스크 생성</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/5.-%ED%83%9C%EC%8A%A4%ED%81%AC-%EC%8B%A4%ED%96%89-%EB%B0%8F-%EA%B6%8C%ED%95%9C-%ED%99%95%EC%9D%B8/">5. 태스크 실행 및 권한 확인</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/v2.0/tutorial/6.-%ED%8C%8C%EC%9D%BC-%EC%A0%84%EC%86%A1/">6. 파일 전송</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>OPMATE v1.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Agent Installation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.0/agent/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/">리눅스/유닉스용 에이전트 삭제</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">리눅스/유닉스용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">윈도우용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/">윈도우즈용 에이전트 삭제</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Tutorial</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>OPMATE V1.1</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/">리눅스/유닉스용 에이전트 삭제</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">리눅스/유닉스용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/">윈도우용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/">윈도우즈용 에이전트 삭제</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#파일허브">파일허브</a></li>
+        <li><a href="#cli-명령어"><strong>CLI 명령어</strong></a></li>
+        <li><a href="#스크립트-예약어"><strong>스크립트 예약어</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#cli-튜토리얼--파일-다운로드--업로드">CLI 튜토리얼 : 파일 다운로드 &amp; 업로드</a>
+      <ul>
+        <li><a href="#1-파일허브-생성-및-권한-부여">1. 파일허브 생성 및 권한 부여</a></li>
+        <li><a href="#2-파일-배포-cli--master--agent">2. 파일 배포 (CLI → Master → Agent)</a></li>
+        <li><a href="#3-파일-수집-agent--master--cli">3. 파일 수집 (Agent → Master → CLI)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+			<h1>6. 파일 전송</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#파일허브">파일허브</a></li>
+        <li><a href="#cli-명령어"><strong>CLI 명령어</strong></a></li>
+        <li><a href="#스크립트-예약어"><strong>스크립트 예약어</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#cli-튜토리얼--파일-다운로드--업로드">CLI 튜토리얼 : 파일 다운로드 &amp; 업로드</a>
+      <ul>
+        <li><a href="#1-파일허브-생성-및-권한-부여">1. 파일허브 생성 및 권한 부여</a></li>
+        <li><a href="#2-파일-배포-cli--master--agent">2. 파일 배포 (CLI → Master → Agent)</a></li>
+        <li><a href="#3-파일-수집-agent--master--cli">3. 파일 수집 (Agent → Master → CLI)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<hr>
+<p><strong>OPMATE</strong>는 태스크 구성 및 실행을 위해 필요한 <strong><u>파일 다운로드 &amp; 업로드</u></strong> 기능을 지원합니다.</p>
+<p>이 기능을 통해 특정 노드에 패치 파일을 배포하거나, 반대로 태스크 실행 결과 파일을 사용자 환경으로 가져올 수도 있습니다.</p>
+<p>주 사용법은 다음과 같습니다:</p>
+<ol>
+<li>
+<p><strong>CLI, WebConsole → Master</strong></p>
+<ul>
+<li>설치, 패치 등에 필요한 파일을 Master 서버로 업로드합니다.</li>
+</ul>
+</li>
+<li>
+<p><strong>Master → Agent</strong></p>
+<ul>
+<li>Master 서버에 업로드된 파일을 Agent가 설치된 서버로 다운로드합니다.</li>
+</ul>
+</li>
+<li>
+<p><strong>Agent → Master</strong></p>
+<ul>
+<li>Agent가 설치된 서버에서 생성된 파일을 Master 서버로 업로드합니다.</li>
+</ul>
+</li>
+<li>
+<p><strong>Master → CLI, WebConsole</strong></p>
+<ul>
+<li>Master 서버에 업로드된 파일을 사용자 환경으로 다운로드합니다.</li>
+</ul>
+</li>
+</ol>
+<br>
+<h3 id="파일허브">파일허브<a href="#파일허브" class="anchor" aria-hidden="true">#</a> </h3>
+<hr>
+<p>파일허브(Filehub)는 파일 송수신을 위한 임시 보관소입니다.
+Master 서버로 업로드된 모든 파일은 지정된 파일허브 디렉터리에 저장됩니다.</p>
+<p>파일허브는 CLI, WebConsole에서 생성 및 관리할 수 있으며, 파일허브 ID로 구분됩니다. <br><br></p>
+<h3 id="cli-명령어"><strong>CLI 명령어</strong><a href="#cli-명령어" class="anchor" aria-hidden="true">#</a> </h3>
+<hr>
+<p>OPMATE CLI의 <code>file</code> 명령어로 사용자 환경에서 파일허브에 있는 파일에 접근할 수 있습니다. <br></p>
+<p><code>file list</code>,  <code>file get</code>,  <code>file put</code>,  <code>file delete</code> 총 4가지 명령어가 있습니다:</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>## 파일 업로드
+$ opmate file put -rp master:/myfilehub/a.txt -lp /tmp/a.txt
+
+## 파일 조회
+$ opmate file list -rp master:/myfilehub/
+
+## 파일 다운로드
+$ opmate file get -rp master:/myfilehub/a.txt -lp /tmp/a.txt -ow
+
+## 파일 삭제
+$ opmate file delete -rp master:/myfilehub/a.txt</code></pre>
+  </figure>
+</div>
+<p>CLI 명령어를 활용하려면 <u><b>현재 로그인된 사용자</b></u>가 파일허브 권한을 가지고 있어야 합니다.</p>
+<p>또한 <code>filehub</code> 명령어를 통해 파일허브를 생성하거나 관리할 수 있습니다:</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate filehub --help
+...
+actions: 
+  list        파일 허브 목록 출력
+  view        파일 허브 상세 출력
+  create      파일 허브 생성
+  edit        파일 허브 수정
+  delete      파일 허브 삭제
+  addperm     퍼미션 추가
+  rmperm      퍼미션 제거</code></pre>
+  </figure>
+</div>
+<br>
+<h3 id="스크립트-예약어"><strong>스크립트 예약어</strong><a href="#스크립트-예약어" class="anchor" aria-hidden="true">#</a> </h3>
+<hr>
+<p>태스크 스크립트 작성 시 예약어로 스크립트 단에서 파일 관련 기능을 활용할 수 있습니다.<br>
+이를 통해 스크립트에서 파일허브를 일종의 원격 디렉터리로 활용할 수 있습니다.<br></p>
+<p><code>FILE_PUT</code>,  <code>FILE_GET</code>,  <code>FILE_LS</code> 총 3가지 예약어가 있습니다:</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>FILE_LS  : 파일 조회
+Usage    : @OPM_ATTR.FILE_LS@ &lt;master:/master-directory-path&gt; [glob]
+Example  : @OPM_ATTR.FILE_LS@ master:/myfilehub/textfile/ &#34;*.txt&#34;</code></pre>
+  </figure>
+</div>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>FILE_PUT : 파일허브로 파일 업로드
+Usage    : @OPM_ATTR.FILE_PUT@ [–-overwrite] &lt;master:/filehub-id/master-file-path&gt; &lt;local-file-path&gt;
+Example  : @OPM_ATTR.FILE_PUT@ --overwrite master:/myfilehub/tomcat.tar.gz /tmp/tomcat.tar.gz</code></pre>
+  </figure>
+</div>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>FILE_GET : 파일허브에서 파일 다운로드
+Usage    : @OPM_ATTR.FILE_GET@ [–-overwrite] &lt;master:/filehub-id/master-file-path&gt; &lt;local-file-path&gt;
+Example  : @OPM_ATTR.FILE_GET@ --overwrite master:/myfilehub/hostname/passwd /etc/passwd </code></pre>
+  </figure>
+</div>
+<p>스크립트 예약어를 사용하려면 반드시 <u><b>스크립트를 실행하는 태스크</b></u>가 파일허브 권한을 가지고 있어야 합니다.</p>
+<p><br><br></p>
+<h2 id="cli-튜토리얼--파일-다운로드--업로드">CLI 튜토리얼 : 파일 다운로드 &amp; 업로드<a href="#cli-튜토리얼--파일-다운로드--업로드" class="anchor" aria-hidden="true">#</a> </h2>
+<hr>
+<p>다음과 같이 간단한 튜토리얼을 통해 파일 다운로드 업로드 과정을 학습해봅니다:</p>
+<ol>
+<li>
+<p>파일허브 생성 및 권한 부여</p>
+</li>
+<li>
+<p>파일 배포 (CLI → Master → Agent)</p>
+</li>
+<li>
+<p>파일 수집 (Agent → Master → CLI)
+<br><br></p>
+</li>
+</ol>
+<h3 id="1-파일허브-생성-및-권한-부여">1. 파일허브 생성 및 권한 부여<a href="#1-파일허브-생성-및-권한-부여" class="anchor" aria-hidden="true">#</a> </h3>
+<hr>
+<p>OPMATE CLI에 로그인한 후, <code>filehub create</code>로 <code>myfilehub</code>란 이름의 파일허브를 생성합니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate filehub create -id myfilehub
+myfilehub has been created successfully.</code></pre>
+  </figure>
+</div>
+<p>이제 생성한 파일허브를 <code>filehub view</code>로 조회해 보겠습니다:</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate filehub view -id myfilehub
++------------+------------------------------------+
+| FIELD      | VALUE                              |
++------------+------------------------------------+
+| ID         | myfilehub                          |
+| OWNER      | gildong                            |
+| CREATED    | 2024-01-01 09:00:00 UTC BY gildong |
+| UPDATED    | 2024-01-01 09:00:00 UTC BY gildong |
++------------+------------------------------------+
+| PERMISSION |                                    |
++------------+------------------------------------+</code></pre>
+  </figure>
+</div>
+<p><code>owner</code>가 태스크 생성자인 <code>gildong</code>으로 설정된 걸 확인할 수 있습니다. <br>
+<code>gildong</code>은 파일허브의 소유자이므로 별도의 권한 설정 없이 파일허브 내의 모든 파일에 대한 권한을 가집니다.</p>
+<p>다른 유저에게도 권한을 부여하고 싶다면 <code>filehub addperm</code> 명령어를 통해 파일허브 권한 목록을 업데이트해야 합니다.
+<br><br></p>
+<h3 id="2-파일-배포-cli--master--agent">2. 파일 배포 (CLI → Master → Agent)<a href="#2-파일-배포-cli--master--agent" class="anchor" aria-hidden="true">#</a> </h3>
+<hr>
+<p>간단한 텍스트 파일을 현재 디렉터리에 생성한 후, 이를 파일허브에 전송해 보겠습니다.<br>
+이 후 해당 파일을 타겟 노드에 배포해 보겠습니다.</p>
+<p>우선 <code>a.txt</code>란 텍스트 파일을 생성합니다:</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ vi a.txt
+&gt; i love opmate</code></pre>
+  </figure>
+</div>
+<p>이 후 <code>file put</code> 명령어를 사용하여 텍스트 파일을 <code>myfilehub</code> 파일허브에 업로드합니다.<br></p>
+<p>파일을 업로드할 디렉터리는 <code>master:/myfilehub/textfile/a.txt</code> 입니다.<br>
+여기서 <code>'master:/myfilehub'</code>는 파일허브 자체의 디렉터리고, <br>
+<code>'textfile'</code>은 파일 허브 상의 하위 디렉터리며, 없을 시 자동으로 생성됩니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate file put -lp a.txt -rp master:/myfilehub/textfile/a.txt 
+ ...
+ checksum success</code></pre>
+  </figure>
+</div>
+<p><code>lp</code> 파라미터는 전송할 파일의 로컬 파일 디렉터리를 지정하며,<br>
+<code>rp</code> 파라미터는 파일이 저장되는 <code>myfilehub</code> 파일허브 상의 파일 디렉터리를 지정합니다.</p>
+<p>파일이 정상적으로 전송되었다면 <br>
+우선 <code>file list</code> 명령어를 통해 <code>myfilehub</code> 파일허브의 루트 디렉터리를 조회합니다:</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate file list -rp master:/myfilehub
++----------+------+-------------------------+-----------+-----------+
+| NAME     | SIZE | DATE                    | TYPE      | VALID_DAY |
++----------+------+-------------------------+-----------+-----------+
+| textfile | 19   | 2024-01-01 09:30:00 KST | directory | 0         |
++----------+------+-------------------------+-----------+-----------+
+ROW COUNT : 1/1</code></pre>
+  </figure>
+</div>
+<p><code>myfilehub</code>의 루트 디렉터리에 <code>textfile</code>이라는 하위 디렉터리가 생성되었습니다.</p>
+<p>이제 <code>myfilehub/textfile</code>을 조회해 보겠습니다:</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate fi list -rp master:/myfilehub/textfile
++-------+------+-------------------------+------+-----------+
+| NAME  | SIZE | DATE                    | TYPE | VALID_DAY |
++-------+------+-------------------------+------+-----------+
+| a.txt | 15   | 2024-01-01 09:30:00 KST | file | 13        |
++-------+------+-------------------------+------+-----------+
+ROW COUNT : 1/1</code></pre>
+  </figure>
+</div>
+<p><code>a.txt</code> 파일이 정상적으로 업로드되었습니다.</p>
+<br>
+<p>이제 파일허브에 업로드된 <code>a.txt</code>를 타겟 노드로 배포해 보겠습니다.</p>
+<p>타겟 노드로의 파일 전송은 Master와 Agent 간의 통신을 통해 이루어지며,<br>
+OPMATE 태스크의 스크립트를 사용하여 수행할 수 있습니다.</p>
+<p>먼저 태스크 생성에 필요한 TDF 파일과 스크립트 파일을 작성합니다.<br>
+TDF 파일은 사용자 환경에 맞게 설정을 변경합니다. (ex. script-account, node-set 등)</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ vi textupload.tdf
+---
+id: textupload
+owner: gildong # 현재 유저명로 변경
+script-account: root # Shell을 실행하는 OS 계정명으로 변경
+description: &#34;Text Upload&#34;
+publisher: gildong # 현재 유저명으로 변경
+target:
+- node-set: OS-TYPE:&#34;^Linux$&#34; # Node-set을 현재 연결된 노드에 따라 변경 
+  account: root
+  description: OS가 Linux인 모든 노드 대상으로 태스크 실행
+...</code></pre>
+  </figure>
+</div>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ vi textupload.sh
+#!/bin/sh
+
+## 파일 다운로드
+@OPM_ATTR.FILE_GET@ --overwrite master:/myfilehub/textfile/a.txt /tmp/a.txt
+
+## 파일 내용 출력
+cat /tmp/a.txt</code></pre>
+  </figure>
+</div>
+<p>이 후 생성한 파일을 토대로 태스크를 생성합니다.<br>
+태스크 생성과 실행에 관해선 <a href="Tutorial4.md">Tutorial 4</a>, <a href="Tutorial5.md">Tutorial 5</a>를 참고해 주세요.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate task create -tf textupload.tdf -sf textupload.sh
+textupload has been created successfully.</code></pre>
+  </figure>
+</div>
+<p>태스크 생성 후 해당 태스크에 <code>myfilehub</code> 파일허브에 대한 권한을 부여합니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate filehub addperm -id myfilehub -ts textupload -mo rwx
+myfilehub has been modified successfully.
+
+$ opmate filehub view -id myfilehub
++------------+------------------------------------+
+| FIELD      | VALUE                              |
++------------+------------------------------------+
+| ID         | myfilehub                          |
+| OWNER      | gildong                            |
+| CREATED    | 2024-01-01 14:00:00 KST BY gildong |
+| UPDATED    | 2024-01-01 14:00:00 KST BY gildong |
++------------+------------------------------------+
+| PERMISSION | textupload(task) : rwx             |
++------------+------------------------------------+</code></pre>
+  </figure>
+</div>
+<p>여기서 유의할 점은 스크립트에서 파일 관련 예약어를 사용할 때
+파일허브 권한이 필요한 <br>대상은 유저 <code>gildong</code>이 아니라 태스크 <code>textupload</code>입니다.
+<br>
+이는 파일 전송의 주체가 태스크를 실행하는 Agent이기 때문입니다.<br></p>
+<p>이후 태스크를 배포하고, 실행합니다. <br>
+만약 Role이 부여되지 않았다면, 현재 유저에게 Role을 부여하거나 Node-set을 변경하여 태스크를 실행할 수 있습니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate task publish -id textupload
+...
+textupload has been published successfully.
+
+$ opmate execute run -ts textupload
+...
+execution #1 has been created successfully.</code></pre>
+  </figure>
+</div>
+<p>이제 태스크 실행 결과를 확인합니다.
+<code>Execution ID</code>와 <code>Node Session ID</code>를 적절히 합니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate execution listnode -id 1
++------------------------------+------------+-------------+--------+--------+
+| NODE-SESSION-ID              | HOSTNAME   | REMOTE-ADDR | STATUS | RESULT |
++------------------------------+------------+-------------+--------+--------+
+| 635df610-fd46-4c6a-b9ae-78c4 | opmate-dev | 123.0.0.1   | comple | succes |
+| 92c00147                     |            |             | ted    | s      |
+| 10ca6b2e-ee06-48f1-a5eb-236f | opmate-db  | 123.0.0.2   | comple | succes |
+| 4c5b2aac                     |            |             | ted    | s      |
++------------------------------+------------+-------------+--------+--------+
+ROW COUNT : 2/2
+
+$ opmate execution viewnode -id 1 -nd 635df610-fd46-4c6a-b9ae-78c492c00147
++-----------------+--------------------------------------+
+| FIELD           | VALUE                                |
++-----------------+--------------------------------------+
+| NODE-SESSION-ID | 635df610-fd46-4c6a-b9ae-78c492c00147 |
+| HOSTNAME        | opmate-dev                           |
+| REMOTE-ADDRESS  | 123.0.0.1                            |
+| ACCOUNT         | root                                 |
+| STATUS          | completed                            |
+| RESULT          | success                              |
+| EXIT-NUM        | 0                                    |
+| FORCE-STOP      | n/a                                  |
+| START-DATE      | 2024-01-01 15:00:00 KST              |
+| END-DATE        | 2024-01-01 15:00:00 KST              |
++-----------------+--------------------------------------+
+[STDOUT]
+i love opmate.
+
+[STDERR]
+No content.</code></pre>
+  </figure>
+</div>
+<p><code>a.txt</code>가 전송되어 <code>STDOUT</code>으로 파일 내용이 출력됩니다: <code>i love opmate.</code><br><br></p>
+<h3 id="3-파일-수집-agent--master--cli">3. 파일 수집 (Agent → Master → CLI)<a href="#3-파일-수집-agent--master--cli" class="anchor" aria-hidden="true">#</a> </h3>
+<hr>
+<p>각 노드에서 <code>/etc/passwd</code> 파일을 개별적으로 수집해 저장해 보겠습니다.</p>
+<p>우선 이전 단계와 비슷한 과정으로 먼저 TDF 파일과 스크립트 파일을 작성합니다.<br></p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ vi passwdcollect.tdf
+---
+id: datacollect
+owner: gildong # 현재 유저명로 변경
+script-account: root # Shell을 실행하는 OS 계정명으로 변경
+description: &#34;Collect /etc/passwd from Node-set&#34;
+publisher: gildong # 현재 유저명으로 변경
+target:
+- node-set: OS-TYPE:&#34;^Linux$&#34; # Node-set을 현재 연결된 노드에 따라 변경 
+  account: root
+  description: OS가 Linux인 모든 노드 대상으로 태스크 실행
+...</code></pre>
+  </figure>
+</div>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ vi passwdcollect.sh
+#!/bin/sh
+
+subdir=$(hostname)
+
+## 각 노드의 /etc/passwd 파일을 /myfilehub/$hostname/passwd 로 복사
+@OPM_ATTR.FILE_PUT@ --overwrite master:/myfilehub/$subdir/passwd /etc/passwd</code></pre>
+  </figure>
+</div>
+<p>해당 스크립트는 타겟 노드의 호스트명을 하위 디렉터리로 하여 <code>/etc/passwd</code> 파일을 저장합니다.</p>
+<p>이 후 TDF, 스크립트 파일을 기반으로 해당 태스크를 생성, 배포, 실행합니다.
+과정 중간에 <code>passwdcollect</code> 태스크에 파일허브에 대한 권한 또한 부여합니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate task create -tf passwdcollect.tdf -sf passwdcollect.sh
+passwdcollect has been created successfully.</code></pre>
+  </figure>
+</div>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate filehub addperm -id myfilehub -ts passwdcollect -mo rwx
+myfilehub has been modified successfully.</code></pre>
+  </figure>
+</div>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate task publish -id passwdcollect
+...
+passwdcollect has been published successfully.</code></pre>
+  </figure>
+</div>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate execute run -ts passwdcollect
+...
+execution #2 has been created successfully.</code></pre>
+  </figure>
+</div>
+<p>태스크 실행까지 마치면 <code>myfilehub</code> 파일허브를 다시 조회해봅니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate file list -rp master:/myfilehub/
++-----------------+------+-------------------------+-----------+-----------+
+| NAME            | SIZE | DATE                    | TYPE      | VALID_DAY |
++-----------------+------+-------------------------+-----------+-----------+
+| opmate-dev      | 20   | 2024-01-01 20:00:00 KST | directory | 0         |
+| opmate-db       | 20   | 2024-01-01 20:00:00 KST | directory | 0         |
++-----------------+------+-------------------------+-----------+-----------+
+ROW COUNT : 2/2</code></pre>
+  </figure>
+</div>
+<p>타겟 노드인 <code>opmate-dev</code>와 <code>opmate-dev</code> 이름으로 두 개의 디렉터리가 생성된 것을 확인할 수 있습니다.</p>
+<p>이 중 <code>opmate-dev</code> 디렉터리를 확인해보면</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate file list -rp master:/myfilehub/opmate-dev
++--------+------+-------------------------+------+-----------+
+| NAME   | SIZE | DATE                    | TYPE | VALID_DAY |
++--------+------+-------------------------+------+-----------+
+| passwd | 2113 | 2024-01-01 20:00:00 KST | file | 13        |
++--------+------+-------------------------+------+-----------+
+ROW COUNT : 1/1</code></pre>
+  </figure>
+</div>
+<p><code>opmate-dev</code> 노드의 <code>/etc/passwd</code> 파일이 정상적으로 업로드된 것을 확인할 수 있습니다.</p>
+<p>해당 파일을 <code>file get</code> 명령어로 사용자 환경으로 다운로드해 보겠습니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate file get -lp /tmp/passwd -rp master:/myfilehub/opmate-dev/passwd
+...
+checksum success
+
+$ cat /tmp/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+...</code></pre>
+  </figure>
+</div>
+<p><code>passwd</code> 파일이 정상적으로 다운로드되었습니다.</p>
+<br>
+<p><a href="Tutorial5.md">이전페이지</a> / <a href="Tutorial.md">목차</a> /</p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/v2.0/tutorial/5.-%ED%83%9C%EC%8A%A4%ED%81%AC-%EC%8B%A4%ED%96%89-%EB%B0%8F-%EA%B6%8C%ED%95%9C-%ED%99%95%EC%9D%B8/" class="stretched-link text-reset text-decoration-none">5. 태스크 실행 및 권한 확인</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/v1.0/tutorial/tutorial/" class="stretched-link text-reset text-decoration-none">Tutorial</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="/privacy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Brought to you by <a class="text-muted" href="https://thulite.io/">Thulite</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script async
+  src="/js/app.9ebf9d7e0b52e04dd0d1e1ce611634928b94195a13cda5a186656868ff2afb29.js"
+  integrity="sha256-nr&#43;dfgtS4E3Q0eHOYRY0kouUGVoTzaWhhmVoaP8q&#43;yk=">
+</script>
+
+
+
+
+
+<script async
+  src="/js/flexsearch.be33aab3067e96554f261851c25a593228b91154cd28ff5c7f8d52b2e7f306d2.js"
+  integrity="sha256-vjOqswZ&#43;llVPJhhRwlpZMii5EVTNKP9cf41SsufzBtI=">
+</script>
+<script async
+  src="/js/search-modal.97d606e77f08deeb37876860d99c8f6813ef29263e73b6435c252de6be98d55e.js"
+  integrity="sha256-l9YG538I3us3h2hg2ZyPaBPvKSY&#43;c7ZDXCUt5r6Y1V4=">
+</script>
+
+    
+  </body>
+</html>
