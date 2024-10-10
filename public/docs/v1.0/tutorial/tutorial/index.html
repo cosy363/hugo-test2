@@ -17,7 +17,7 @@
 <noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/v1.0/tutorial/tutorial/">
   <link rel="canonical" href="http://localhost:1313/docs/v1.0/tutorial/tutorial/">
 <title>Tutorial  |  OPMATE</title>
-<meta name="description" content="노드 활성화">
+<meta name="description" content="태스크 실행">
 
     
     <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -45,7 +45,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 
 <meta property="og:title" content="Tutorial">
-<meta property="og:description" content="노드 활성화">
+<meta property="og:description" content="태스크 실행">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://localhost:1313/docs/v1.0/tutorial/tutorial/"><meta property="og:image" content="http://localhost:1313/cover.png"><meta property="article:section" content="docs">
 
@@ -53,7 +53,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/cover.png"><meta name="twitter:title" content="Tutorial">
-<meta name="twitter:description" content="노드 활성화">
+<meta name="twitter:description" content="태스크 실행">
 <meta name="twitter:site" content="@getdoks">
 
     
@@ -243,20 +243,20 @@
       <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
   </li>
 
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
   <li class="active" >
       <a aria-current="page" href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
-  </li>
-
-  <li>
-      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
-  </li>
-
-  <li>
-      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
-  </li>
-
-  <li>
-      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
   </li>
       </ul>
     </details>
@@ -595,20 +595,20 @@
       <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
   </li>
 
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
+  </li>
+
   <li class="active" >
       <a aria-current="page" href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
-  </li>
-
-  <li>
-      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
-  </li>
-
-  <li>
-      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
-  </li>
-
-  <li>
-      <a href="/docs/v1.0/tutorial/tutorial/">Tutorial</a>
   </li>
       </ul>
     </details>
@@ -736,10 +736,8 @@
 			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
 				
 			</nav>
-			<p><a href="QuickTutorial.md">첫페이지</a> / <a href="QuickTutorial2.md">이전페이지</a> / <a href="QuickTutorial4.md">다음페이지</a></p>
-<p>노드(Node)는 관리하고자 하는 서버와 대응하는 개념입니다.
-서버에 에이전트를 설치 후 구동하면, 자동으로 노드가 마스터로 등록됩니다.</p>
-<p>우선, 노드의 목록을 조회해 보겠습니다.</p>
+			<p><a href="QuickTutorial.md">첫페이지</a> / <a href="QuickTutorial5.md">이전페이지</a></p>
+<p>드디어, 태스크 실행입니다.</p>
 
 
 
@@ -748,22 +746,14 @@
   <figcaption class="header">
     <span class="title"></span>
   </figcaption>
-  <pre tabindex="0"><code>$ opmate node list
+  <pre tabindex="0"><code>$ opmate task run -id diskusage
 Requesting https://127.0.0.1:8443/opmate;user=bumbee
-+----------------------------------+-----------+------------+-------+----------+-------+------------------+---------+
-| ID                               | AGENT VER | CONNECT IP | OS    | HOSTNAME | OWNER | HEARTBEAT        | STATUS  |
-+----------------------------------+-----------+------------+-------+----------+-------+------------------+---------+
-| 3106E85BCF76465F8F9B16BC3873C380 | 1.0.001   | 10.0.0.92  | Linux | myhost2  |       | 2019/04/30 14:10 | disable |
-| 6FE9E69A10B44EBEAFC3A9F05078066C | 1.0.001   | 10.0.0.91  | Linux | myhost1  |       | 2019/04/30 14:10 | disable |
-+----------------------------------+-----------+------------+-------+----------+-------+------------------+---------+
-
-ROWS COUNT : 2/2</code></pre>
+Instance(142) of task has been created.</code></pre>
   </figure>
 </div>
-<p>2개의 노드가 있는데, 상태(STATUS)가 비활성화(disable) 이네요.
-소유자(OWNER)도 비어 있습니다.
-정상적으로 사용하기 위해서는 활성화(enable)시켜야 합니다.
-활성화하면서 너무 긴 ID도 줄여보겠습니다.</p>
+<p>태스크를 한번 실행하면 그와 대응하는 태스크 인스턴스(Task Instance)가 만들어집니다.
+위에서는 142으로 인스턴스가 생성되었고, 이 번호는 전체 태스크에서 고유한 번호입니다.</p>
+<p>태스크 diskusage의 인스턴스를 조회해보겠습니다.</p>
 
 
 
@@ -772,16 +762,21 @@ ROWS COUNT : 2/2</code></pre>
   <figcaption class="header">
     <span class="title"></span>
   </figcaption>
-  <pre tabindex="0"><code>$ opmate node edit -id 6FE9E69A10B44EBEAFC3A9F05078066C -wi linux01 -st E
+  <pre tabindex="0"><code>$ opmate task listrun -id diskusage   
 Requesting https://127.0.0.1:8443/opmate;user=bumbee
-6FE9E69A10B44EBEAFC3A9F05078066C has been modified successfully.
++------------------+---------------------+---------------------+--------------+-----------+
+| TASK INSTANCE NO | START DT            | END DT              | RUNNER       | NEXT TASK |
++------------------+---------------------+---------------------+--------------+-----------+
+| 142              | 2019/04/30 17:49:54 | 2019/04/30 17:50:07 | bumbee(User) |           |
++------------------+---------------------+---------------------+--------------+-----------+
 
-$ opmate node edit -id 3106E85BCF76465F8F9B16BC3873C380 -wi linux02 -st E
-Requesting https://127.0.0.1:8443/opmate;user=bumbee
-3106E85BCF76465F8F9B16BC3873C380 has been modified successfully.</code></pre>
+ROWS COUNT : 1/1</code></pre>
   </figure>
 </div>
-<p>다시 조회합니다.</p>
+<p>태스크 정의 후 최초 실행이라 목록에서 하나만 보입니다.
+인스턴스별 시작시간과(START DT)과 종료시간(END DT)이 출력되는데, 종료시간이 표시된다는 것은 태스크의 타겟 노드 전체가 완료되었다는 의미입니다.
+단 한개의 노드라도 완료되지 않으면 표시되지 않습니다.</p>
+<p>이 인스턴스의 타겟 노드별 결과도 확인해보겠습니다.</p>
 
 
 
@@ -790,21 +785,62 @@ Requesting https://127.0.0.1:8443/opmate;user=bumbee
   <figcaption class="header">
     <span class="title"></span>
   </figcaption>
-  <pre tabindex="0"><code>$ opmate node list
+  <pre tabindex="0"><code>$ opmate task listrunnode -in 142
 Requesting https://127.0.0.1:8443/opmate;user=bumbee
-+---------+-----------+------------+-------+----------+--------+------------------+--------+
-| ID      | AGENT VER | CONNECT IP | OS    | HOSTNAME | OWNER  | HEARTBEAT        | STATUS |
-+---------+-----------+------------+-------+----------+--------+------------------+--------+
-| linux02 | 1.0.001   | 10.0.0.92  | Linux | myhost2  | bumbee | 2019/04/30 14:15 | enable |
-| linux01 | 1.0.001   | 10.0.0.91  | Linux | myhost1  | bumbee | 2019/04/30 14:15 | enable |
-+---------+-----------+------------+-------+----------+--------+------------------+--------+
-
-ROWS COUNT : 2/2</code></pre>
++---------+---------+----------+---------------------+---------------------+---------+---------+
+| NODE ID | EXEC NO | STATUS   | START DT            | END DT              | RESULT  | EXIT CD |
++---------+---------+----------+---------------------+---------------------+---------+---------+
+| linux01 | 1       | Complete | 2019/04/30 17:50:03 | 2019/04/30 17:50:03 | Success | 0       |
+| linux02 | 1       | Complete | 2019/04/30 17:50:03 | 2019/04/30 17:50:03 | Success | 0       |
++---------+---------+----------+---------------------+---------------------+---------+---------+</code></pre>
   </figure>
 </div>
-<p>노드가 활성화 되었고 ID도 사용하기 편하도록 짧게 바뀌었습니다.
-소유자(OWNER)는 bumbee가 되었네요.</p>
-<p><a href="QuickTutorial.md">첫페이지</a> / <a href="QuickTutorial2.md">이전페이지</a> / <a href="QuickTutorial4.md">다음페이지</a></p>
+<p>각 노드별로 진행상태 및 결과가 출력되는군요.</p>
+<p>하나의 노드를 지정해서 조금 더 상세히 조회해 보겠습니다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate task viewrun -in 142 -ni linux01
+Requesting https://127.0.0.1:8443/opmate;user=bumbee
++------------------+---------------------+
+| FIELD            | VALUE               |
++------------------+---------------------+
+| TASK INSTANCE NO | 142                 |
+| TASK ID          | diskusage           |
+| NODE ID          | linux01             |
+| EXEC NO          | 1                   |
+| STATUS           | Complete            |
+| START DT         | 2019/04/30 17:50:03 |
+| END DT           | 2019/04/30 17:50:03 |
+| RUNNER           | bumbee(User)        |
+| RESULT           | Success             |
+| EXIT CD          | 0                   |
++------------------+---------------------+
+
+[Standard error]
+No content.
+
+[Standard output]
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/mapper/centos-root   50G  1.3G   49G   3% /
+devtmpfs                 486M     0  486M   0% /dev
+tmpfs                    496M     0  496M   0% /dev/shm
+tmpfs                    496M  6.6M  490M   2% /run
+tmpfs                    496M     0  496M   0% /sys/fs/cgroup
+/dev/sda1               1014M  153M  862M  16% /boot
+/dev/mapper/centos-home   47G  101M   47G   1% /home
+tmpfs                    100M     0  100M   0% /run/user/0</code></pre>
+  </figure>
+</div>
+<p>스크립트의 실행결과인 표준에러와 표준출력을 확인할 수 있습니다.</p>
+<p>지금까지 간단한 예제를 통해 기초적인 이해와 사용 방법을 익히셨습니다.
+실전에서 사용하기 위한 세부적인 내용과 다양한 명령어는 <a href="Overview.md">사용자 매뉴얼</a>과 <a href="CliUsage.md">Command Line Usage</a>를 참고하시기 바랍니다.</p>
+<p><a href="QuickTutorial.md">첫페이지</a> / <a href="QuickTutorial5.md">이전페이지</a></p>
 
 			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
 				</div>
@@ -831,7 +867,7 @@ ROWS COUNT : 2/2</code></pre>
 			<div class="card-body d-flex justify-content-end">
 				<div class="d-flex flex-column">
 					<div class="text-body-secondary">Next</div>
-					<a href="/docs/v1.0/tutorial/tutorial/" class="stretched-link text-reset text-decoration-none">Tutorial</a>
+					<a href="/docs/v1.1/tutorial/" class="stretched-link text-reset text-decoration-none">Tutorial</a>
 				</div>
 				<div class="d-flex flex-column justify-content-center">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
