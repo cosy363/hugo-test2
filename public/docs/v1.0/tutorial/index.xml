@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on OPMATE</title>
-    <link>http://localhost:1313/docs/v1.0/tutorial/</link>
+    <link>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/</link>
     <description>Recent content in Tutorial on OPMATE</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright (c) 2020-2024 Thulite</copyright>
-    <atom:link href="http://localhost:1313/docs/v1.0/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/hugo-test2/docs/v1.0/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/docs/v1.0/tutorial/tutorial/</link>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/v1.0/tutorial/tutorial/</guid>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;첫페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial2.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;OPMATE CLI 명령어는 &lt;code&gt;opmate &amp;lt;object&amp;gt; &amp;lt;action&amp;gt; &amp;lt;option&amp;gt;&lt;/code&gt;의 형식으로 이루어져 있습니다. 가능한 파라미터와 설명을 보고 싶다면, 다음의 형식으로 마지막에 &lt;code&gt;help&lt;/code&gt;를 붙여주면 됩니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/docs/v1.0/tutorial/tutorial/</link>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/v1.0/tutorial/tutorial/</guid>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;첫페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial1.md&#34;&gt;이전페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial3.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다음과 같이 나의 사용자 계정을 만듭니다. 사용자ID는 bumbee이고, 이름, 전화번호, 이메일 등을 입력합니다.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ opmate user create -id bumbee -nm &amp;#39;Bumblebee&amp;#39; -pn &amp;#39;010-2222-2222&amp;#39; -ea &amp;#39;bumbee@email.com&amp;#39;&#xA;Requesting https://127.0.0.1:8443/opmate&#xA;Enter password: &#xA;Confirm password: &#xA;bumbee has been created successfully.&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;정상적으로 생성이 되었지만, 아직은 사용이 불가능합니다.&#xA;관리자 권한을 가지고 있는 사용자에게 활성화를 요청합니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/docs/v1.0/tutorial/tutorial/</link>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/v1.0/tutorial/tutorial/</guid>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;첫페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial2.md&#34;&gt;이전페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial4.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;노드(Node)는 관리하고자 하는 서버와 대응하는 개념입니다.&#xA;서버에 에이전트를 설치 후 구동하면, 자동으로 노드가 마스터로 등록됩니다.&lt;/p&gt;&#xA;&lt;p&gt;우선, 노드의 목록을 조회해 보겠습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/docs/v1.0/tutorial/tutorial/</link>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/v1.0/tutorial/tutorial/</guid>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;첫페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial3.md&#34;&gt;이전페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial5.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;에이전트가 설치된 노드에 명령을 실행하기 위해서, 태스크(Task)를 정의해야 합니다.&lt;/p&gt;&#xA;&lt;p&gt;먼저, 스크립트 파일을 만듭니다.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ vi diskusage.sh&#xA;#!/bin/sh&#xA;df -h&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;&lt;code&gt;diskusage&lt;/code&gt;라는 ID로 태스크를 생성합니다.&#xA;위에서 만든 쉘스크립트 파일의 경로를 주고, 서버에서 실행할 OS 사용자명은 root로 지정합니다.&#xA;또한, 온디맨드 방식으로 실행할 수 있도록, &lt;code&gt;&#39;-eo E&#39;&lt;/code&gt; 옵션도 추가합니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/docs/v1.0/tutorial/tutorial/</link>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/v1.0/tutorial/tutorial/</guid>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;첫페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial4.md&#34;&gt;이전페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial6.md&#34;&gt;다음페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;신규로 생성한 태스크는 실행하기 위해서는 승인을 먼저 받아야 합니다.&#xA;승인은 승인권한을 가지고 있는 사용자만이 할 수 있습니다.&#xA;사용자 목록을 조회해보겠습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/docs/v1.0/tutorial/tutorial/</link>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/v1.0/tutorial/tutorial/</guid>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/tutorial/tutorial/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;QuickTutorial.md&#34;&gt;첫페이지&lt;/a&gt; / &lt;a href=&#34;QuickTutorial5.md&#34;&gt;이전페이지&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;드디어, 태스크 실행입니다.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ opmate task run -id diskusage&#xA;Requesting https://127.0.0.1:8443/opmate;user=bumbee&#xA;Instance(142) of task has been created.&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;태스크를 한번 실행하면 그와 대응하는 태스크 인스턴스(Task Instance)가 만들어집니다.&#xA;위에서는 142으로 인스턴스가 생성되었고, 이 번호는 전체 태스크에서 고유한 번호입니다.&lt;/p&gt;</description>
     </item>
   </channel>

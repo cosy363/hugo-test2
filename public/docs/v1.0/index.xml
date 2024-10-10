@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OPMATE v1.0 on OPMATE</title>
-    <link>http://localhost:1313/docs/v1.0/</link>
+    <link>http://localhost:1313/hugo-test2/docs/v1.0/</link>
     <description>Recent content in OPMATE v1.0 on OPMATE</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright (c) 2020-2024 Thulite</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/v1.0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/hugo-test2/docs/v1.0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>사용자 매뉴얼</title>
-      <link>http://localhost:1313/docs/v1.0/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/</link>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/v1.0/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/</guid>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/</guid>
       <description>&lt;h2 id=&#34;사용자-user&#34;&gt;사용자 (User)&lt;/h2&gt;&#xA;&lt;p&gt;사용자는 다음과 같은 정보를 가진다.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;사용자ID, 비밀번호, 이름, 역할, 휴대전화, 이메일, 설명, 활성상태&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;역할-role&#34;&gt;역할 (Role)&lt;/h3&gt;&#xA;&lt;p&gt;사용자는 다음과 같은 종류의 역할(Role)을 가질 수 있으며, 역할에 따라 수행 가능한 작업의 범위가 달라진다.&lt;/p&gt;</description>
     </item>
   </channel>
