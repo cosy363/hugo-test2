@@ -10,11 +10,39 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/hugo-test2/docs/v1.0/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>리눅스/유닉스용 에이전트 삭제</title>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</guid>
+      <description>&lt;p&gt;에이전트가 &lt;strong&gt;/infsw/opma&lt;/strong&gt; 디렉토리에 설치되어 있다고 가정하였습니다. 실제 설치된 경로에 따라 진행하시기 바랍니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;root로-로그인&#34;&gt;root로 로그인&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ su -&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;에이전트-중지&#34;&gt;에이전트 중지&lt;/h2&gt;&#xA;&lt;p&gt;실행중인 에이전트를 중지시킵니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>리눅스/유닉스용 에이전트 설치</title>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/</guid>
+      <description>&lt;h2 id=&#34;파일-준비&#34;&gt;파일 준비&lt;/h2&gt;&#xA;&lt;p&gt;최신 버전의 설치 파일을 준비합니다.(e.g. opma-inst-1.0.001-20190425.tar.gz)&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ls&#xA;opma-inst-1.0.001-20190425.tar.gz&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;root-로-로그인&#34;&gt;root 로 로그인&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ su -&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;압축-해제-및-인스톨러-실행&#34;&gt;압축 해제 및 인스톨러 실행&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ gunzip opma-inst-1.0.001-20190425.tar.gz&#xA;$ tar -xvf opma-inst-1.0.001-20190425.tar&#xA;$ cd opma-inst-1.0.001-20190425&#xA;$ ./install.sh&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;입력&#34;&gt;입력&lt;/h2&gt;&#xA;&lt;p&gt;설치할 경로를 입력하고, 출력되는 내용을 확인 후 설치를 진행합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>사용자 매뉴얼</title>
       <link>http://localhost:1313/hugo-test2/docs/v1.0/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/hugo-test2/docs/v1.0/%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A7%A4%EB%89%B4%EC%96%BC/</guid>
       <description>&lt;h2 id=&#34;사용자-user&#34;&gt;사용자 (User)&lt;/h2&gt;&#xA;&lt;p&gt;사용자는 다음과 같은 정보를 가진다.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;사용자ID, 비밀번호, 이름, 역할, 휴대전화, 이메일, 설명, 활성상태&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;역할-role&#34;&gt;역할 (Role)&lt;/h3&gt;&#xA;&lt;p&gt;사용자는 다음과 같은 종류의 역할(Role)을 가질 수 있으며, 역할에 따라 수행 가능한 작업의 범위가 달라진다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>윈도우용 에이전트 설치</title>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/</guid>
+      <description>&lt;h2 id=&#34;파일-준비&#34;&gt;파일 준비&lt;/h2&gt;&#xA;&lt;p&gt;최신 버전의 설치 파일(e.g. opma-inst-1.0.001-20190425.exe)을 준비하여 C:\ 에 복사합니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;명령-프롬프트-실행&#34;&gt;명령 프롬프트 실행&lt;/h2&gt;&#xA;&lt;p&gt;실행 메뉴에서 cmd 를 입력하여 명령프롬프트를 실행한 후, 설치파일이 존재하는 디렉토리로 이동합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>윈도우즈용 에이전트 삭제</title>
+      <link>http://localhost:1313/hugo-test2/docs/v1.0/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.0/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</guid>
+      <description>&lt;p&gt;에이전트가 &lt;strong&gt;C:\infsw\opma&lt;/strong&gt; 디렉토리에 설치되어 있다고 가정하였습니다. 실제 설치된 경로에 따라 진행하시기 바랍니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;명령-프롬프트-실행&#34;&gt;명령 프롬프트 실행&lt;/h2&gt;&#xA;&lt;p&gt;실행 메뉴에서 cmd 를 입력하여 명령프롬프트를 실행합니다.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

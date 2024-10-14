@@ -1,1 +1,44 @@
 // Put your custom SCSS code here
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Nanum Gothic Coding';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/nanum-gothic-coding-v21-korean-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+    --bs-border-radius: 0.25rem;
+}
+
+code,
+.callout,
+#toTop,
+figure img {
+    border-radius: var(--bs-border-radius) !important;
+}
+
+p,
+ol,
+details,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-nav summary {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }

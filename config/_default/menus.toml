@@ -1,0 +1,65 @@
+[[main]]
+  identifier = "v2"
+  name = "v2.0"
+  url = "/v2/About"
+  weight = 1
+
+[[v2]]
+  identifier = "v2-intro"
+  name = "OPMATE v2.0"
+  url = "/v2/About"
+  weight = 1
+
+[[v2]]
+  identifier = "v2-tutorial"
+  name = "사용자 튜토리얼"
+  url = "/v2/Tutorial"
+  weight = 1
+
+[[main]]
+  identifier = "v1.1"
+  name = "v1.1"
+  url = "/v11/about"
+  weight = 2
+
+[[v11]]
+  identifier = "v11-about"
+  name = "OPMATE v1.1"
+  url = "/v11/About"
+  weight = 1
+
+[[v11]]
+  identifier = "v11-tutorial"
+  name = "사용자 튜토리얼(v1.1)"
+  url = "/v11/tutorial"
+  weight = 2
+
+[[v11]]
+  identifier = "v11-manual"
+  name = "사용자 매뉴얼(v1.1)"
+  url = "/v11/manual"
+  weight = 3
+
+[[main]]
+  name = "v1.0"
+  url = "/v10/about"
+  weight = 3
+
+[[v10]]
+  identifier = "v10-about"
+  name = "OPMATE v1.0"
+  url = "/v10/about"
+  weight = 1
+
+[[v10]]
+  identifier = "v10-tutorial"
+  name = "사용자 튜토리얼(v1.0)"
+  url = "/v10/tutorial"
+  weight = 2
+
+
+[[v10]]
+  identifier = "v10-manual"
+  name = "사용자 매뉴얼(v1.0)"
+  url = "/v10/manual"
+  weight = 3

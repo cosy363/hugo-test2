@@ -1,13 +1,12 @@
 # Hugo
-title = "My Docs"
-description = "Congrats on setting up a new Doks project!"
-images = ["cover.png"]
+title = "OPMATE"
+description = "인프라 자동화 플랫폼 - OPMATE"
+images = ["cover.png","opmate-filehub-summary.jpg"]
+footer = "Copyright by SK C&C inc"
+pageNavigation = true
 
 # mainSections
 mainSections = ["docs"]
-
-[social]
-  twitter = "getdoks"
 
 # Doks (@thulite/doks-core)
 [doks]
@@ -17,12 +16,12 @@ mainSections = ["docs"]
 
   # Navbar
   navbarSticky = true # true (default) or false
-  containerBreakpoint = "lg" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
+  containerBreakpoint = "xl" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
 
   ## Button
-  navBarButton = false # false (default) or true
-  navBarButtonUrl = "/docs/prologue/introduction/"
-  navBarButtonText = "Get started"
+  navBarButton = true # false (default) or true
+  navBarButtonUrl = "https://www.skcc.co.kr/cloud/server-automation"
+  navBarButtonText = "OPMATE 시작하기"
 
   # FlexSearch
   flexSearch = true # true (default) or false
@@ -34,7 +33,7 @@ mainSections = ["docs"]
   ## Search results
   showDate = false # false (default) or true
   showSummary = true # true (default) or false
-  searchLimit = 99 # 0 (no limit, default) or natural number
+  searchLimit = 5 # 0 (no limit, default) or natural number
 
   # Global alert
   alert = false # false (default) or true
@@ -45,8 +44,8 @@ mainSections = ["docs"]
 
   # Nav
   sectionNav = ["docs"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
-  toTopButton = false # false (default) or true
-  breadcrumbTrail = false # false (default) or true
+  toTopButton = true # false (default) or true
+  breadcrumbTrail = false  # false (default) or true
   headlineHash = true # true (default) or false
   scrollSpy = true # true (default) or false
 
@@ -70,27 +69,14 @@ mainSections = ["docs"]
   imageList = true # true (default) or false
   imageSingle = true # true (default) or false
 
-  # Repository
-  editPage = false # false (default) or true
-  lastMod = false # false (default) or true
-  repoHost = "GitHub" # GitHub (default), Gitea, GitLab, Bitbucket, or BitbucketServer
-  docsRepo = "https://github.com/h-enk/doks"
-  docsRepoBranch = "main" # main (default), master, or <branch name>
-  docsRepoSubPath = "" # "" (none, default) or <sub path>
-
   # SCSS colors
-  # backGround = "yellowgreen"
+  backGround = "yellowgreen"
   ## Dark theme
-  # textDark = "#dee2e6" # "#dee2e6" (default), "#dee2e6" (orignal), or custom color
-  # accentDark = "#5d2f86" # "#5d2f86" (default), "#5d2f86" (original), or custom color
+   textDark = "#dee2e6" # "#dee2e6" (default), "#dee2e6" (orignal), or custom color
+   accentDark = "#5d2f86" # "#5d2f86" (default), "#5d2f86" (original), or custom color
   ## Light theme
-  # textLight = "#1d2d35" # "#1d2d35" (default), "#1d2d35" (orignal), or custom color
-  # accentLight = "#8ed6fb" # "#8ed6fb" (default), "#8ed6fb" (orignal), or custom color
-
-  # [doks.menu]
-  #   [doks.menu.section]
-  #     auto = true # true (default) or false
-  #     collapsibleSidebar = true # true (default) or false
+   textLight = "#1d2d35" # "#1d2d35" (default), "#1d2d35" (orignal), or custom color
+   accentLight = "#8ed6fb" # "#8ed6fb" (default), "#8ed6fb" (orignal), or custom color
 
 # Debug
 [render_hooks.image]
@@ -136,3 +122,7 @@ mainSections = ["docs"]
     newsArticle = [] # NewsArticle sections
     blogPosting = ["blog"] # BlogPosting sections
     product = [] # Product sections
+
+[options]
+  highLight = true
+  instantPage = true

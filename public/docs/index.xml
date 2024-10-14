@@ -7,7 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright (c) 2020-2024 Thulite</copyright>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/hugo-test2/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>리눅스/유닉스용 에이전트 삭제</title>
+      <link>http://localhost:1313/hugo-test2/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.1/%EB%A6%AC%EB%88%85%EC%8A%A4/%EC%9C%A0%EB%8B%89%EC%8A%A4%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</guid>
+      <description>&lt;p&gt;에이전트가 &lt;strong&gt;/infsw/opma&lt;/strong&gt; 디렉토리에 설치되어 있다고 가정하였습니다. 실제 설치된 경로에 따라 진행하시기 바랍니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;root로-로그인&#34;&gt;root로 로그인&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ su -&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;에이전트-중지&#34;&gt;에이전트 중지&lt;/h2&gt;&#xA;&lt;p&gt;실행중인 에이전트를 중지시킵니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>윈도우즈용 에이전트 삭제</title>
+      <link>http://localhost:1313/hugo-test2/docs/v1.1/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-test2/docs/v1.1/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%9A%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%82%AD%EC%A0%9C/</guid>
+      <description>&lt;p&gt;에이전트가 &lt;strong&gt;C:\infsw\opma&lt;/strong&gt; 디렉토리에 설치되어 있다고 가정하였습니다. 실제 설치된 경로에 따라 진행하시기 바랍니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;명령-프롬프트-실행&#34;&gt;명령 프롬프트 실행&lt;/h2&gt;&#xA;&lt;p&gt;실행 메뉴에서 cmd 를 입력하여 명령프롬프트를 관리자 권한으로 실행합니다.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
