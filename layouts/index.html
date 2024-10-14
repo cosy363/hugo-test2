@@ -4,7 +4,48 @@
     <div class="col-lg-9 col-xl-8 text-center">
       <h6>IT 인프라 운영 자동화 플랫폼</h6>
       {{/*  <h1 class="visually-hidden">OPMATE</h1>  */}}
-      <img src="images/Logo_b_788x144.png" alt="OPMATE" class="img-fluid mb-5" style="max-width: 500px;">
+	  <img id="siteLogo" src="images/Logo_b_788x144.png" alt="OPMATE" class="img-fluid mb-5" style="max-width: 500px;">
+	  {{/*  다크모드 전환 시 이미지 전환 스크립트  */}}
+	  <script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const logo = document.getElementById('siteLogo');
+			const lightLogo = 'images/Logo_b_788x144.png';
+			const darkLogo = 'images/Logo_w_788x144.png';
+			const colorModeButton = document.getElementById('buttonColorMode');
+		
+			function updateLogo() {
+				const isDarkMode = document.documentElement.getAttribute('data-bs-theme') === 'dark';
+				logo.src = isDarkMode ? darkLogo : lightLogo;
+			}
+		
+			// 초기 로고 설정
+			updateLogo();
+		
+			// 테마 변경 버튼 클릭 이벤트 리스너
+			if (colorModeButton) {
+				colorModeButton.addEventListener('click', function() {
+					// 버튼 클릭 후 로고 업데이트를 위해 setTimeout 사용
+					setTimeout(updateLogo, 0);
+				});
+			}
+		
+			// MutationObserver를 사용하여 html 태그의 data-bs-theme 속성 변경 감지
+			const observer = new MutationObserver(function(mutations) {
+				mutations.forEach(function(mutation) {
+					if (mutation.type === "attributes" && mutation.attributeName === "data-bs-theme") {
+						updateLogo();
+					}
+				});
+			});
+		
+			observer.observe(document.documentElement, {
+				attributes: true,
+				attributeFilter: ['data-bs-theme']
+			});
+		});
+		</script>
+
+	  
 	  {{/*  <h1>OPMATE</h1>  */}}
       <div class="d-flex flex-column align-items-center gap-3">
         <a class="btn btn-primary btn-lg px-4" href='{{ "v2/about" | relURL }}' role="button">OPMATE Version 2.0</a>
